@@ -107,7 +107,7 @@ function App() {
           <div ref={messagesEndRef} />
         </div>
 
-        {/* ▼ [새로 추가된 부분] 3가지 드롭다운이 들어간 폼 영역 */}
+        {/* ▼ [새로 추가된 부분] 3가지 드롭다운이 들어간 폼 영역 adsf*/}
         <form
           onSubmit={handleFilterSubmit}
           className="p-3 sm:p-4 bg-slate-100 flex flex-wrap gap-2 border-t border-slate-200 shrink-0"
