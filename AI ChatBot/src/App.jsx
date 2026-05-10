@@ -118,11 +118,11 @@ function App() {
 
   return (
     <div className="min-h-screen bg-slate-100 flex justify-center items-center p-0 sm:p-4 text-slate-800 font-sans">
-      <main className="flex flex-col w-full max-w-2xl h-[100dvh] sm:h-[85vh] bg-white sm:rounded-2xl shadow-xl overflow-hidden">
-        <header className="bg-blue-600 text-white p-4 sm:p-5 text-center text-lg sm:text-xl font-bold shrink-0">
+      <main className="flex flex-col w-full max-w-3xl h-[100dvh] sm:h-[95vh] bg-white sm:rounded-2xl shadow-xl overflow-hidden">
+        {" "}
+        <header className="bg-blue-600 text-white p-2 sm:p-3 text-center text-base sm:text-lg font-bold shrink-0">
           AI 커리어 가이드
         </header>
-
         <div
           className="flex-1 p-4 overflow-y-auto flex flex-col gap-4 bg-slate-50"
           role="log"
@@ -151,7 +151,6 @@ function App() {
           ))}
           <div ref={messagesEndRef} />
         </div>
-
         {/* 조건 검색 폼 영역 */}
         <form
           onSubmit={handleFilterSubmit}
@@ -217,7 +216,6 @@ function App() {
             맞춤 검색
           </button>
         </form>
-
         {/* 입력 영역 (이미지 미리보기 + 채팅 입력) */}
         <div className="flex flex-col p-3 sm:p-4 border-t border-slate-200 gap-2 bg-white shrink-0">
           {attachedImage && (
